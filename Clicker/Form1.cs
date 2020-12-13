@@ -27,9 +27,8 @@ namespace Clicker
             InitializeComponent();
             numericUpDown1.Minimum = 0;
             numericUpDown1.Maximum = decimal.MaxValue;
-            numericUpDown1.Value = 2000;
+            numericUpDown1.Value = 10000;
             timer.Elapsed += Timer_Elapsed;
-            Text = "Auto Clicker";
         }
 
         private void Timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
@@ -90,5 +89,17 @@ namespace Clicker
             return outList;
         }
 
+        private void btnRem_Click(object sender, EventArgs e)
+        {
+            if (flpActions.Controls.Count > 0)
+            {
+                flpActions.Controls.RemoveAt(flpActions.Controls.Count - 1);
+            }
+        }
+
+        private void btnClr_Click(object sender, EventArgs e)
+        {
+            flpActions.Controls.Clear();
+        }
     }
 }

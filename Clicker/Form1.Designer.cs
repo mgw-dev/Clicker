@@ -35,12 +35,14 @@ namespace Clicker
             this.flpActions = new System.Windows.Forms.FlowLayoutPanel();
             this.btnAddClick = new System.Windows.Forms.Button();
             this.btnAddDelay = new System.Windows.Forms.Button();
+            this.btnRem = new System.Windows.Forms.Button();
+            this.btnClr = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(352, 293);
+            this.button1.Location = new System.Drawing.Point(361, 121);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(78, 47);
             this.button1.TabIndex = 0;
@@ -50,7 +52,7 @@ namespace Clicker
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(209, 304);
+            this.numericUpDown1.Location = new System.Drawing.Point(218, 132);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             0,
             0,
@@ -64,7 +66,7 @@ namespace Clicker
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(130, 306);
+            this.label1.Location = new System.Drawing.Point(139, 134);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 15);
             this.label1.TabIndex = 2;
@@ -72,14 +74,19 @@ namespace Clicker
             // 
             // flpActions
             // 
-            this.flpActions.Location = new System.Drawing.Point(12, 12);
+            this.flpActions.AutoScroll = true;
+            this.flpActions.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.flpActions.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.flpActions.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flpActions.Location = new System.Drawing.Point(0, 0);
             this.flpActions.Name = "flpActions";
-            this.flpActions.Size = new System.Drawing.Size(578, 116);
+            this.flpActions.Size = new System.Drawing.Size(602, 67);
             this.flpActions.TabIndex = 6;
+            this.flpActions.WrapContents = false;
             // 
             // btnAddClick
             // 
-            this.btnAddClick.Location = new System.Drawing.Point(13, 135);
+            this.btnAddClick.Location = new System.Drawing.Point(12, 73);
             this.btnAddClick.Name = "btnAddClick";
             this.btnAddClick.Size = new System.Drawing.Size(75, 23);
             this.btnAddClick.TabIndex = 7;
@@ -89,7 +96,7 @@ namespace Clicker
             // 
             // btnAddDelay
             // 
-            this.btnAddDelay.Location = new System.Drawing.Point(94, 135);
+            this.btnAddDelay.Location = new System.Drawing.Point(93, 73);
             this.btnAddDelay.Name = "btnAddDelay";
             this.btnAddDelay.Size = new System.Drawing.Size(75, 23);
             this.btnAddDelay.TabIndex = 8;
@@ -97,20 +104,42 @@ namespace Clicker
             this.btnAddDelay.UseVisualStyleBackColor = true;
             this.btnAddDelay.Click += new System.EventHandler(this.btnAddDelay_Click);
             // 
+            // btnRem
+            // 
+            this.btnRem.Location = new System.Drawing.Point(174, 73);
+            this.btnRem.Name = "btnRem";
+            this.btnRem.Size = new System.Drawing.Size(75, 23);
+            this.btnRem.TabIndex = 9;
+            this.btnRem.Text = "Remove";
+            this.btnRem.UseVisualStyleBackColor = true;
+            this.btnRem.Click += new System.EventHandler(this.btnRem_Click);
+            // 
+            // btnClr
+            // 
+            this.btnClr.Location = new System.Drawing.Point(515, 73);
+            this.btnClr.Name = "btnClr";
+            this.btnClr.Size = new System.Drawing.Size(75, 23);
+            this.btnClr.TabIndex = 10;
+            this.btnClr.Text = "Clear";
+            this.btnClr.UseVisualStyleBackColor = true;
+            this.btnClr.Click += new System.EventHandler(this.btnClr_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(602, 440);
+            this.ClientSize = new System.Drawing.Size(602, 191);
+            this.Controls.Add(this.btnClr);
+            this.Controls.Add(this.btnRem);
             this.Controls.Add(this.btnAddDelay);
             this.Controls.Add(this.btnAddClick);
             this.Controls.Add(this.flpActions);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.button1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Auto Clicker";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -125,6 +154,8 @@ namespace Clicker
         private System.Windows.Forms.FlowLayoutPanel flpActions;
         private System.Windows.Forms.Button btnAddClick;
         private System.Windows.Forms.Button btnAddDelay;
+        private System.Windows.Forms.Button btnRem;
+        private System.Windows.Forms.Button btnClr;
     }
 }
 
