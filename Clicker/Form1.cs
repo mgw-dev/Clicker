@@ -54,6 +54,8 @@ namespace Clicker
                 flpActions.Enabled = true;
                 btnAddClick.Enabled = true;
                 btnAddDelay.Enabled = true;
+                btnClr.Enabled = true;
+                btnRem.Enabled = true;
             }
             else
             {
@@ -65,6 +67,8 @@ namespace Clicker
                 flpActions.Enabled = false;
                 btnAddClick.Enabled = false;
                 btnAddDelay.Enabled = false;
+                btnClr.Enabled = false;
+                btnRem.Enabled = false;
             }
         }
 
