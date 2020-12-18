@@ -1,5 +1,5 @@
 # Clicker
-Simple Windows Forms application to automatically click on a set interval.
+Simple Windows application to automatically click on a set interval.
 
 ![Screenshot](/img/ss1.PNG?raw=true "Screenshot")
 
