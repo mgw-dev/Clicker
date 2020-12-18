@@ -1,0 +1,107 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "AutoClicker/1.0.0": {
+        "dependencies": {
+          "ModernWpfUI": "0.9.3-preview.201204.0",
+          "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.18362.12"
+        },
+        "runtime": {
+          "AutoClicker.dll": {}
+        }
+      },
+      "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.18362.12": {
+        "runtime": {
+          "Microsoft.Windows.SDK.NET.dll": {
+            "assemblyVersion": "10.0.18362.10",
+            "fileVersion": "10.0.18362.12"
+          },
+          "WinRT.Runtime.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.33641"
+          }
+        }
+      },
+      "ModernWpfUI/0.9.3-preview.201204.0": {
+        "runtime": {
+          "lib/net5.0-windows10.0.18362.0/ModernWpf.Controls.dll": {
+            "assemblyVersion": "0.9.3.0",
+            "fileVersion": "0.9.3.0"
+          },
+          "lib/net5.0-windows10.0.18362.0/ModernWpf.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "resources": {
+          "lib/net5.0-windows10.0.18362.0/cs/ModernWpf.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net5.0-windows10.0.18362.0/de/ModernWpf.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net5.0-windows10.0.18362.0/es/ModernWpf.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net5.0-windows10.0.18362.0/fa/ModernWpf.resources.dll": {
+            "locale": "fa"
+          },
+          "lib/net5.0-windows10.0.18362.0/fr/ModernWpf.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net5.0-windows10.0.18362.0/it/ModernWpf.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net5.0-windows10.0.18362.0/ja/ModernWpf.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net5.0-windows10.0.18362.0/ko/ModernWpf.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net5.0-windows10.0.18362.0/pl/ModernWpf.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net5.0-windows10.0.18362.0/pt-BR/ModernWpf.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net5.0-windows10.0.18362.0/ru/ModernWpf.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net5.0-windows10.0.18362.0/tr/ModernWpf.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net5.0-windows10.0.18362.0/zh-Hans/ModernWpf.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net5.0-windows10.0.18362.0/zh-Hant/ModernWpf.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AutoClicker/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.18362.12": {
+      "type": "runtimepack",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ModernWpfUI/0.9.3-preview.201204.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-41141ZSagcF1PnZbH9Jnf1lFFyaq4VCzU6e3kpxwbI5Y3eU4binmt69LVJqqKyNGChCdkNosWFJ5SxN9huqG4Q==",
+      "path": "modernwpfui/0.9.3-preview.201204.0",
+      "hashPath": "modernwpfui.0.9.3-preview.201204.0.nupkg.sha512"
+    }
+  }
+}
