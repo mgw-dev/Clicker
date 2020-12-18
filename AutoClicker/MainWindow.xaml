@@ -1,0 +1,31 @@
+﻿<Window x:Class="AutoClicker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoClicker"
+        mc:Ignorable="d"
+        Title="AutoClicker" Height="343" Width="800"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        xmlns:system="clr-namespace:System;assembly=System.Runtime"
+        ui:WindowHelper.UseModernWindowStyle="True"
+        ui:ThemeManager.IsThemeAware="True"
+        >
+
+    <Window.Resources>
+
+    </Window.Resources>
+
+    <Grid>
+        <ScrollViewer x:Name="ActionScrollViewer" PanningMode="HorizontalOnly" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Hidden" Height="120" VerticalAlignment="Top">
+            <WrapPanel x:Name="ActionsWrapPanel" Margin="0,0,0,0" VerticalAlignment="Stretch"/>
+        </ScrollViewer>
+        <Button x:Name="AddClickButton" Content="Add Click" Margin="5,126,5,0" VerticalAlignment="Top" Click="AddClick"/>
+        <Button x:Name="AddDelayButton" Content="Add Delay" Margin="86,126,5,0" VerticalAlignment="Top" Click="AddDelay"/>
+        <Button x:Name="RemoveButton" Content="Remove" Margin="173,126,0,0" VerticalAlignment="Top" Click="Remove"/>
+        <Button x:Name="ClearButton" Content="Clear"  Margin="0,126,5,0" VerticalAlignment="Top" Click="Clear" HorizontalAlignment="Right"/>
+        <ui:NumberBox x:Name="MiliBox" Height="Auto" Margin="315,0,355,5" Minimum="0" Maximum="{Binding Source={x:Static system:Int32.MaxValue}}" Value="1000" Header="Interval (ms)" VerticalAlignment="Bottom"/>
+        <Button x:Name="StartButton" Content="Start" Margin="450,0,0,5" VerticalAlignment="Bottom" Click="Start"/>
+
+    </Grid>
+</Window>
