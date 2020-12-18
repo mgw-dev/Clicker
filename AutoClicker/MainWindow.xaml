@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AutoClicker"
         mc:Ignorable="d"
-        Title="AutoClicker" Height="343" Width="800"
+        Title="Auto Clicker" Height="343" Width="800"
         xmlns:ui="http://schemas.modernwpf.com/2019"
         xmlns:system="clr-namespace:System;assembly=System.Runtime"
         ui:WindowHelper.UseModernWindowStyle="True"
